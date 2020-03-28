@@ -17,7 +17,8 @@ export PATH="/Users/shreyasvh/Downloads/activator-dist-1.3.10/bin:$PATH"
 export PATH="/usr/local/opt/scala/bin:$PATH"
 
 #sbt
-export PATH="/usr/local/opt/sbt@0.13/bin:$PATH"
+# export PATH="/usr/local/opt/sbt@0.13/bin:$PATH"
+export PATH="/Users/shreyasvh/.sbtenv/versions/sbt-0.13.5/sbt/bin:$PATH"
 
 export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.8.0_241.jdk/Contents/Home"
 

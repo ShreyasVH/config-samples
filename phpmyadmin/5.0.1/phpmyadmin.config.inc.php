@@ -28,28 +28,27 @@ $i = 0;
 $i++;
 /* Authentication type */
 $cfg['Servers'][$i]['auth_type'] = 'config';
-/* Server parameters */
-$cfg['Servers'][$i]['host'] = 'localhost';
-$cfg['Servers'][$i]['port'] = 3309;
-$cfg['Servers'][$i]['verbose']   = 'no1';
-$cfg['Servers'][$i]['compress'] = false;
-$cfg['Servers'][$i]['AllowNoPassword'] = false;
-$cfg['Servers'][$i]['extension'] = 'mysqli';
-$cfg['Servers'][$i]['user'] = 'shreyas';
-$cfg['Servers'][$i]['password'] = 'password';
-$cfg['Servers'][$i]['socket'] = '/Users/shreyasvh/Desktop/sockets/mysqld_8.0.sock';
-
-$i++;
-$cfg['Servers'][$i]['auth_type'] = 'config';
 $cfg['Servers'][$i]['host'] = 'localhost';
 $cfg['Servers'][$i]['port'] = 3307;
-$cfg['Servers'][$i]['verbose']   = 'no2';
+$cfg['Servers'][$i]['verbose']   = '5.6.47';
 $cfg['Servers'][$i]['compress'] = false;
 $cfg['Servers'][$i]['AllowNoPassword'] = false;
 $cfg['Servers'][$i]['extension'] = 'mysqli';
 $cfg['Servers'][$i]['user'] = 'shreyas';
 $cfg['Servers'][$i]['password'] = 'password';
 $cfg['Servers'][$i]['socket'] = '/Users/shreyasvh/Desktop/sockets/mysqld_5.6.sock';
+
+$i++;
+$cfg['Servers'][$i]['auth_type'] = 'config';
+$cfg['Servers'][$i]['host'] = 'localhost';
+$cfg['Servers'][$i]['port'] = 3309;
+$cfg['Servers'][$i]['verbose']   = '8.0.19';
+$cfg['Servers'][$i]['compress'] = false;
+$cfg['Servers'][$i]['AllowNoPassword'] = false;
+$cfg['Servers'][$i]['extension'] = 'mysqli';
+$cfg['Servers'][$i]['user'] = 'shreyas';
+$cfg['Servers'][$i]['password'] = 'password';
+$cfg['Servers'][$i]['socket'] = '/Users/shreyasvh/Desktop/sockets/mysqld_8.0.sock';
 /**
  * phpMyAdmin configuration storage settings.
  */
