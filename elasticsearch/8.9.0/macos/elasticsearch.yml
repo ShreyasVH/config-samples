@@ -1,0 +1,24 @@
+cluster.name: elasticsearch_8_9_0
+
+node.name: node-8_9_0-1
+
+network.host: 0.0.0.0
+
+http.port: 1153
+transport.port: 1154
+
+discovery.seed_hosts: ["0.0.0.0:1154"]
+
+cluster.initial_master_nodes: ["node-8_9_0-1"]
+
+xpack.security.enabled: false
+
+xpack.security.enrollment.enabled: false
+
+# Enable encryption for HTTP API client connections, such as Kibana, Logstash, and Agents
+xpack.security.http.ssl:
+  enabled: false
+
+# Enable encryption and mutual authentication between cluster nodes
+xpack.security.transport.ssl:
+  enabled: false
