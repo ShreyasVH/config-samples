@@ -97,6 +97,18 @@ $cfg['Servers'][$i]['extension'] = 'mysqli';
 $cfg['Servers'][$i]['user'] = 'shreyas';
 $cfg['Servers'][$i]['password'] = 'password';
 
+$i++;
+$cfg['Servers'][$i]['auth_type'] = 'config';
+$cfg['Servers'][$i]['host'] = 'localhost';
+$cfg['Servers'][$i]['port'] = 1370;
+$cfg['Servers'][$i]['verbose']   = '9.0.1';
+$cfg['Servers'][$i]['compress'] = false;
+$cfg['Servers'][$i]['AllowNoPassword'] = false;
+$cfg['Servers'][$i]['extension'] = 'mysqli';
+$cfg['Servers'][$i]['user'] = 'shreyas';
+$cfg['Servers'][$i]['password'] = 'password';
+$cfg['Servers'][$i]['socket'] = '/Users/shreyas/programs/mysql/9.0.1/data/mysql_9_0_1.sock';
+
 
 /**
  * phpMyAdmin configuration storage settings.
