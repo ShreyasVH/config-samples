@@ -9,7 +9,7 @@ RPROMPT='%(?.%F{green}OK.%F{red}FAIL)%f'
 
 
 
-# /Users/shreyashande/programs/wget/1.21.4/bin
+# /Users/shreyas/programs/wget/1.21.4/bin
 # //Applications/Sublime Text.app/Contents/SharedSupport/bin/
 # /usr/local/sbin
 # /usr/local/bin

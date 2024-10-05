@@ -28,7 +28,7 @@
 # same ServerRoot for multiple httpd daemons, you will need to change at
 # least PidFile.
 #
-ServerRoot "/Users/shreyashande/programs/apache/2.4.55"
+ServerRoot "/Users/shreyas/programs/apache/2.4.55"
 
 #
 # Mutex: Allows you to set the mutex mechanism and mutex file directory
@@ -214,8 +214,8 @@ ServerAdmin you@example.com
 # documents. By default, all requests are taken from this directory, but
 # symbolic links and aliases may be used to point to other locations.
 #
-DocumentRoot "/Users/shreyashande/programs/apache/2.4.55/htdocs"
-<Directory "/Users/shreyashande/programs/apache/2.4.55/htdocs">
+DocumentRoot "/Users/shreyas/programs/apache/2.4.55/htdocs"
+<Directory "/Users/shreyas/programs/apache/2.4.55/htdocs">
     #
     # Possible values for the Options directive are "None", "All",
     # or any combination of:
@@ -331,7 +331,7 @@ LogLevel warn
     # client.  The same rules about trailing "/" apply to ScriptAlias
     # directives as to Alias.
     #
-    ScriptAlias /cgi-bin/ "/Users/shreyashande/programs/apache/2.4.55/cgi-bin/"
+    ScriptAlias /cgi-bin/ "/Users/shreyas/programs/apache/2.4.55/cgi-bin/"
 
 </IfModule>
 
@@ -344,10 +344,10 @@ LogLevel warn
 </IfModule>
 
 #
-# "/Users/shreyashande/programs/apache/2.4.55/cgi-bin" should be changed to whatever your ScriptAliased
+# "/Users/shreyas/programs/apache/2.4.55/cgi-bin" should be changed to whatever your ScriptAliased
 # CGI directory exists, if you have that configured.
 #
-<Directory "/Users/shreyashande/programs/apache/2.4.55/cgi-bin">
+<Directory "/Users/shreyas/programs/apache/2.4.55/cgi-bin">
     AllowOverride None
     Options None
     Require all granted

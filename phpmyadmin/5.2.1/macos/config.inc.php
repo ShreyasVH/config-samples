@@ -36,7 +36,7 @@ $cfg['Servers'][$i]['AllowNoPassword'] = false;
 $cfg['Servers'][$i]['extension'] = 'mysqli';
 $cfg['Servers'][$i]['user'] = 'shreyas';
 $cfg['Servers'][$i]['password'] = 'password';
-$cfg['Servers'][$i]['socket'] = '/Users/shreyashande/programs/mysql/8.0.33/data/mysql_8_0_33.sock';
+$cfg['Servers'][$i]['socket'] = '/Users/shreyas/programs/mysql/8.0.33/data/mysql_8_0_33.sock';
 
 $i++;
 $cfg['Servers'][$i]['auth_type'] = 'config';
@@ -60,7 +60,7 @@ $cfg['Servers'][$i]['AllowNoPassword'] = false;
 $cfg['Servers'][$i]['extension'] = 'mysqli';
 $cfg['Servers'][$i]['user'] = 'shreyas';
 $cfg['Servers'][$i]['password'] = 'password';
-$cfg['Servers'][$i]['socket'] = '/Users/shreyashande/programs/mysql/8.0.34/data/mysql_8_0_34.sock';
+$cfg['Servers'][$i]['socket'] = '/Users/shreyas/programs/mysql/8.0.34/data/mysql_8_0_34.sock';
 
 $i++;
 $cfg['Servers'][$i]['auth_type'] = 'config';
@@ -72,7 +72,7 @@ $cfg['Servers'][$i]['AllowNoPassword'] = false;
 $cfg['Servers'][$i]['extension'] = 'mysqli';
 $cfg['Servers'][$i]['user'] = 'shreyas';
 $cfg['Servers'][$i]['password'] = 'password';
-$cfg['Servers'][$i]['socket'] = '/Users/shreyashande/programs/mysql/8.1.0/data/mysql_8_1_0.sock';
+$cfg['Servers'][$i]['socket'] = '/Users/shreyas/programs/mysql/8.1.0/data/mysql_8_1_0.sock';
 
 $i++;
 $cfg['Servers'][$i]['auth_type'] = 'config';
@@ -84,7 +84,7 @@ $cfg['Servers'][$i]['AllowNoPassword'] = false;
 $cfg['Servers'][$i]['extension'] = 'mysqli';
 $cfg['Servers'][$i]['user'] = 'shreyas';
 $cfg['Servers'][$i]['password'] = 'password';
-// $cfg['Servers'][$i]['socket'] = '/Users/shreyashande/programs/mysql/8.1.0/data/mysql_8_1_0.sock';
+// $cfg['Servers'][$i]['socket'] = '/Users/shreyas/programs/mysql/8.1.0/data/mysql_8_1_0.sock';
 
 $i++;
 $cfg['Servers'][$i]['auth_type'] = 'config';

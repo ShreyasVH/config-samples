@@ -712,7 +712,7 @@ log_timezone = 'Asia/Kolkata'
 
 # - Locale and Formatting -
 
-datestyle = 'iso, mdy'
+datestyle = 'iso, dmy'
 #intervalstyle = 'postgres'
 timezone = 'Asia/Kolkata'
 #timezone_abbreviations = 'Default'     # Select the set of available time zone
@@ -728,17 +728,17 @@ timezone = 'Asia/Kolkata'
 					# encoding
 
 # These settings are initialized by initdb, but they can be changed.
-#lc_messages = 'C'			# locale for system error message
+lc_messages = 'en_AU.UTF-8'		# locale for system error message
 					# strings
-#lc_monetary = 'C'			# locale for monetary formatting
-#lc_numeric = 'C'			# locale for number formatting
-#lc_time = 'C'				# locale for time formatting
+lc_monetary = 'en_AU.UTF-8'		# locale for monetary formatting
+lc_numeric = 'en_AU.UTF-8'		# locale for number formatting
+lc_time = 'en_AU.UTF-8'			# locale for time formatting
 
 #icu_validation_level = warning		# report ICU locale validation
 					# errors at the given level
 
 # default configuration for text search
-default_text_search_config = 'pg_catalog.simple'
+default_text_search_config = 'pg_catalog.english'
 
 # - Shared Library Preloading -
 
