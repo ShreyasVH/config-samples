@@ -10,3 +10,8 @@ export PATH="/usr/local/binaries:$PATH"
 export PATH="/usr/local/systemBinaries:$PATH"
 
 eval "$(direnv hook bash)"
+
+export DISPLAY=192.168.0.178:0
+
+
+SUDO_ASKPASS=$HOME/askpass.sh sudo -A timedatectl set-timezone UTC
