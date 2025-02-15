@@ -35,3 +35,4 @@ export PATH="/opt/homebrew/Cellar/gcc/14.2.0/bin":$PATH
 #source <(ng completion script)
 eval "$(direnv hook zsh)"
 
+export DIRENV_LOG_FORMAT=
