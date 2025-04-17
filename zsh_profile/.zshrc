@@ -21,7 +21,7 @@ RPROMPT='%(?.%F{green}OK.%F{red}FAIL)%f'
 # /var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin
 # /var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin
 # /var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin
-export PATH=/System/Cryptexes/App/usr/bin:/usr/bin:/bin
+# export PATH=/System/Cryptexes/App/usr/bin:/usr/bin:/bin
 # export PATH=/System/Cryptexes/App/usr/bin:/bin
 export PATH="/usr/local/binaries:$PATH"
 export PATH="/usr/local/systemBinaries:$PATH"
