@@ -15,7 +15,7 @@ export PATH=""
 # /usr/local/bin
 # /System/Cryptexes/App/usr/bin
 # /usr/bin
-# /bin
+export PATH=/bin:$PATH
 # /usr/sbin
 # /sbin
 # /var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin
