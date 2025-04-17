@@ -8,7 +8,7 @@ RPROMPT='%(?.%F{green}OK.%F{red}FAIL)%f'
 #export PATH="/Applications/Sublime Text.app/Contents/SharedSupport/bin:$PATH"
 
 
-
+export PATH=""
 # /Users/shreyas/programs/wget/1.21.4/bin
 # //Applications/Sublime Text.app/Contents/SharedSupport/bin/
 # /usr/local/sbin
@@ -21,8 +21,8 @@ RPROMPT='%(?.%F{green}OK.%F{red}FAIL)%f'
 # /var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin
 # /var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin
 # /var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin
-# export PATH=/System/Cryptexes/App/usr/bin:/usr/bin:/bin
-# export PATH=/System/Cryptexes/App/usr/bin:/bin
+# export PATH=/System/Cryptexes/App/usr/bin:/usr/bin:/bin:$PATH
+# export PATH=/System/Cryptexes/App/usr/bin:/bin:$PATH
 export PATH="/usr/local/binaries:$PATH"
 export PATH="/usr/local/systemBinaries:$PATH"
 #export PATH="/Applications/Docker.app/Contents/Resources/bin:$PATH"
