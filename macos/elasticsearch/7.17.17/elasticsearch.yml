@@ -1,0 +1,12 @@
+cluster.name: elasticsearch_7_17_17
+
+node.name: node-7_17_17-1
+
+network.host: 0.0.0.0
+
+http.port: 1266
+transport.port: 1267
+
+discovery.seed_hosts: ["0.0.0.0:1267"]
+
+cluster.initial_master_nodes: ["node-7_17_17-1"]

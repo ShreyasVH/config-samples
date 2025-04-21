@@ -1,0 +1,4 @@
+server.port: 1159
+
+elasticsearch.hosts: ['http://localhost:1058']
+
