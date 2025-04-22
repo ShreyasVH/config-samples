@@ -193,9 +193,9 @@ dynamic_shared_memory_type = posix	# the default is usually the first option
 #effective_io_concurrency = 0		# 1-1000; 0 disables prefetching
 #maintenance_io_concurrency = 10	# 1-1000; 0 disables prefetching
 #max_worker_processes = 8		# (change requires restart)
-#max_parallel_workers_per_gather = 2	# taken from max_parallel_workers
-#max_parallel_maintenance_workers = 2	# taken from max_parallel_workers
-#max_parallel_workers = 8		# maximum number of max_worker_processes that
+#max_parallel_workers_per_gather = 2	# limited by max_parallel_workers
+#max_parallel_maintenance_workers = 2	# limited by max_parallel_workers
+#max_parallel_workers = 8		# number of max_worker_processes that
 					# can be used in parallel operations
 #parallel_leader_participation = on
 #old_snapshot_threshold = -1		# 1min-60d; -1 disables; 0 is immediate
@@ -728,11 +728,11 @@ timezone = 'Asia/Kolkata'
 					# encoding
 
 # These settings are initialized by initdb, but they can be changed.
-lc_messages = 'en_AU.UTF-8'		# locale for system error message
+lc_messages = 'en_IN.UTF-8'		# locale for system error message
 					# strings
-lc_monetary = 'en_AU.UTF-8'		# locale for monetary formatting
-lc_numeric = 'en_AU.UTF-8'		# locale for number formatting
-lc_time = 'en_AU.UTF-8'			# locale for time formatting
+lc_monetary = 'en_IN.UTF-8'		# locale for monetary formatting
+lc_numeric = 'en_IN.UTF-8'		# locale for number formatting
+lc_time = 'en_IN.UTF-8'			# locale for time formatting
 
 #icu_validation_level = warning		# report ICU locale validation
 					# errors at the given level
