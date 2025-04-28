@@ -125,7 +125,7 @@ $i++;
 $cfg['Servers'][$i]['auth_type'] = 'config';
 $cfg['Servers'][$i]['host'] = 'localhost';
 $cfg['Servers'][$i]['port'] = 1422;
-$cfg['Servers'][$i]['verbose']   = '9.3.0';
+$cfg['Servers'][$i]['verbose']   = '9.0.1';
 $cfg['Servers'][$i]['compress'] = false;
 $cfg['Servers'][$i]['AllowNoPassword'] = false;
 $cfg['Servers'][$i]['extension'] = 'mysqli';
