@@ -23,8 +23,8 @@ export PATH=/bin:$PATH
 # /var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin
 # export PATH=/System/Cryptexes/App/usr/bin:/usr/bin:/bin:$PATH
 # export PATH=/System/Cryptexes/App/usr/bin:/bin:$PATH
-export PATH="/usr/local/binaries:$PATH"
-export PATH="/usr/local/systemBinaries:$PATH"
+export PATH="$HOME/binaries:$PATH"
+export PATH="$HOME/systemBinaries:$PATH"
 #export PATH="/Applications/Docker.app/Contents/Resources/bin:$PATH"
 export PATH="/Applications/Sublime Text.app/Contents/SharedSupport/bin/":$PATH
 export PATH="/Applications/Docker.app/Contents/Resources/bin/":$PATH
