@@ -13,8 +13,8 @@ export PATH="/usr/sbin":$PATH
 export PATH="/usr/bin":$PATH
 export PATH="/sbin":$PATH
 export PATH="/bin":$PATH
-export PATH="/usr/local/binaries:$PATH"
-export PATH="/usr/local/systemBinaries:$PATH"
+export PATH="$HOME/binaries:$PATH"
+export PATH="$HOME/systemBinaries:$PATH"
 
 eval "$(direnv hook bash)"
 
