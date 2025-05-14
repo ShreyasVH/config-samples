@@ -11,14 +11,17 @@ discovery.seed_hosts: ["0.0.0.0:1063"]
 
 cluster.initial_master_nodes: ["node-8_10_0-1"]
 
-xpack.security.enabled: false
+xpack.security.enabled: true
 
 xpack.security.enrollment.enabled: false
 
-# Enable encryption for HTTP API client connections, such as Kibana, Logstash, and Agents
-xpack.security.http.ssl:
-  enabled: false
+xpack.security.http.ssl.enabled: true
+xpack.security.http.ssl.key: server.key
+xpack.security.http.ssl.certificate: server.crt
+xpack.security.http.ssl.certificate_authorities: [ "rootCA.crt" ]
 
-# Enable encryption and mutual authentication between cluster nodes
-xpack.security.transport.ssl:
-  enabled: false
+xpack.security.transport.ssl.enabled: true
+xpack.security.transport.ssl.verification_mode: certificate
+xpack.security.transport.ssl.key: server.key
+xpack.security.transport.ssl.certificate: server.crt
+xpack.security.transport.ssl.certificate_authorities: [ "rootCA.crt" ]

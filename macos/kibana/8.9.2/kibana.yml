@@ -1,4 +1,12 @@
 server.port: 41701
 
-elasticsearch.hosts: ['http://localhost:41504']
+elasticsearch.hosts: ['https://elastic_8_9_2.local.com']
 
+elasticsearch.username: "kibana_system"
+elasticsearch.password: "password"
+
+elasticsearch.ssl.certificateAuthorities: ["/Users/shreyas/workspace/myProjects/ssl/rootCA.crt"]
+
+server.ssl.enabled: true
+server.ssl.certificate: /Users/shreyas/workspace/myProjects/ssl/server.crt
+server.ssl.key: /Users/shreyas/workspace/myProjects/ssl/server.key

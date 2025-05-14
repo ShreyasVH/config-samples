@@ -1,6 +1,6 @@
-server.port: 1271
+server.port: 1161
 
-elasticsearch.hosts: ['https://elastic_8_12_1.local.com']
+elasticsearch.hosts: ['https://elastic_8_10_0.local.com']
 
 elasticsearch.username: "kibana_system"
 elasticsearch.password: "password"
