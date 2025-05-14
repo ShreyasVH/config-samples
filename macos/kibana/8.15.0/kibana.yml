@@ -1,4 +1,12 @@
 server.port: 1368
 
-elasticsearch.hosts: ['http://localhost:1366']
+elasticsearch.hosts: ['https://localhost:1366']
 
+elasticsearch.username: "kibana_system"
+elasticsearch.password: "password"
+
+elasticsearch.ssl.certificateAuthorities: ["/Users/shreyas/programs/elasticsearch/8.15.0/config/rootCA.pem"]
+
+server.ssl.enabled: true
+server.ssl.certificate: /Users/shreyas/programs/elasticsearch/8.15.0/config/server.crt
+server.ssl.key: /Users/shreyas/programs/elasticsearch/8.15.0/config/server.key
