@@ -5,7 +5,7 @@ elasticsearch.hosts: ['https://localhost:1366']
 elasticsearch.username: "kibana_system"
 elasticsearch.password: "password"
 
-elasticsearch.ssl.certificateAuthorities: ["/Users/shreyas/programs/elasticsearch/8.15.0/config/rootCA.pem"]
+elasticsearch.ssl.certificateAuthorities: ["/Users/shreyas/programs/elasticsearch/8.15.0/config/rootCA.crt"]
 
 server.ssl.enabled: true
 server.ssl.certificate: /Users/shreyas/programs/elasticsearch/8.15.0/config/server.crt
