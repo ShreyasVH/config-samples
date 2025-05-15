@@ -28,7 +28,7 @@
 # same ServerRoot for multiple httpd daemons, you will need to change at
 # least PidFile.
 #
-ServerRoot "/home/shreyas/programs/apache/2.4.57"
+ServerRoot "/home/shreyas/programs/apache/2.4.58"
 
 #
 # Mutex: Allows you to set the mutex mechanism and mutex file directory
@@ -102,6 +102,7 @@ LoadModule reqtimeout_module modules/mod_reqtimeout.so
 LoadModule filter_module modules/mod_filter.so
 #LoadModule substitute_module modules/mod_substitute.so
 #LoadModule sed_module modules/mod_sed.so
+#LoadModule deflate_module modules/mod_deflate.so
 LoadModule mime_module modules/mod_mime.so
 LoadModule log_config_module modules/mod_log_config.so
 #LoadModule log_debug_module modules/mod_log_debug.so
@@ -214,8 +215,8 @@ ServerAdmin you@example.com
 # documents. By default, all requests are taken from this directory, but
 # symbolic links and aliases may be used to point to other locations.
 #
-DocumentRoot "/home/shreyas/programs/apache/2.4.57/htdocs"
-<Directory "/home/shreyas/programs/apache/2.4.57/htdocs">
+DocumentRoot "/home/shreyas/programs/apache/2.4.58/htdocs"
+<Directory "/home/shreyas/programs/apache/2.4.58/htdocs">
     #
     # Possible values for the Options directive are "None", "All",
     # or any combination of:
@@ -331,7 +332,7 @@ LogLevel warn
     # client.  The same rules about trailing "/" apply to ScriptAlias
     # directives as to Alias.
     #
-    ScriptAlias /cgi-bin/ "/home/shreyas/programs/apache/2.4.57/cgi-bin/"
+    ScriptAlias /cgi-bin/ "/home/shreyas/programs/apache/2.4.58/cgi-bin/"
 
 </IfModule>
 
@@ -344,10 +345,10 @@ LogLevel warn
 </IfModule>
 
 #
-# "/home/shreyas/programs/apache/2.4.57/cgi-bin" should be changed to whatever your ScriptAliased
+# "/home/shreyas/programs/apache/2.4.58/cgi-bin" should be changed to whatever your ScriptAliased
 # CGI directory exists, if you have that configured.
 #
-<Directory "/home/shreyas/programs/apache/2.4.57/cgi-bin">
+<Directory "/home/shreyas/programs/apache/2.4.58/cgi-bin">
     AllowOverride None
     Options None
     Require all granted
