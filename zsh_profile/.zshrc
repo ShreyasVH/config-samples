@@ -14,8 +14,8 @@ export PATH=""
 # /usr/local/sbin
 # /usr/local/bin
 # /System/Cryptexes/App/usr/bin
-export PATH=/usr/bin:$PATH
-export PATH=/bin:$PATH
+# export PATH=/usr/bin:$PATH
+# export PATH=/bin:$PATH
 # /usr/sbin
 # /sbin
 # /var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin
@@ -35,4 +35,21 @@ export PATH="/Applications/Docker.app/Contents/Resources/bin":$PATH
 #source <(ng completion script)
 eval "$(direnv hook zsh)"
 
-export DIRENV_LOG_FORMAT=
+export DIRENV_LOG_FORMAT=export PATH=$HOME/programs/curl/8.13.0/bin:$PATH
+export PATH=$HOME/programs/bash/5.2.37/bin:$PATH
+export PATH=$HOME/programs/zsh/5.9/bin:$PATH
+export PATH=$HOME/programs/coreutils/9.7/bin:$PATH
+export PATH=$HOME/programs/binutils/2.44/bin:$PATH
+export PATH=$HOME/programs/findutils/4.10.0/bin:$PATH
+export PATH=$HOME/programs/sed/4.9/bin:$PATH
+export PATH=$HOME/programs/gawk/5.3.2/bin:$PATH
+export PATH=$HOME/programs/sudo/1.9.16/bin:$PATH
+export PATH=$HOME/programs/tar/1.35/bin:$PATH
+export PATH=$HOME/programs/make/4.4.1/bin:$PATH
+export PATH=$HOME/programs/git/2.49.0/bin:$PATH
+export PATH=$HOME/programs/lsof/4.99.4/bin:$PATH
+export PATH=$HOME/programs/less/668/bin:$PATH
+export PATH=$HOME/programs/gzip/1.14/bin:$PATH
+export PATH=$HOME/programs/grep/3.12/bin:$PATH
+export PATH=$HOME/programs/clang/18.1.18/bin:$PATH
+export PATH=$HOME/programs/unzip/6.0/bin:$PATH
