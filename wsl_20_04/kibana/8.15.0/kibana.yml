@@ -1,0 +1,12 @@
+server.port: 1368
+
+elasticsearch.hosts: ["https://localhost:1366"]
+
+elasticsearch.username: "kibana_system"
+elasticsearch.password: "password"
+
+elasticsearch.ssl.certificateAuthorities: ["/home/shreyas/workspace/myProjects/ssl/rootCA.crt"]
+
+server.ssl.enabled: true
+server.ssl.certificate: /home/shreyas/workspace/myProjects/ssl/server.crt
+server.ssl.key: /home/shreyas/workspace/myProjects/ssl/server.key
