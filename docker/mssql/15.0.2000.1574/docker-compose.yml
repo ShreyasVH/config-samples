@@ -9,3 +9,5 @@ services:
     environment:
       - ACCEPT_EULA=Y
       - SA_PASSWORD=P@ssword
+    volumes:
+      - ./backups:/home/mssql/backups
