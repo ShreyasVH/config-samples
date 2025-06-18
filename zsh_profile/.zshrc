@@ -30,6 +30,7 @@ export PATH="/Applications/Sublime Text.app/Contents/SharedSupport/bin":$PATH
 export PATH="/Applications/Docker.app/Contents/Resources/bin":$PATH
 # export PATH="/opt/homebrew/bin":$PATH
 # export PATH="/opt/homebrew/Cellar/gcc/14.2.0/bin":$PATH
+export PATH="$HOME/programs/direnv:$PATH"
 
 # Load Angular CLI autocompletion.
 #source <(ng completion script)
