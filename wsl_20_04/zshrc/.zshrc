@@ -32,4 +32,4 @@ export DISPLAY=192.168.0.178:0
 
 SUDO_ASKPASS=$HOME/askpass.sh sudo -A timedatectl set-timezone UTC
 
-xport DIRENV_LOG_FORMAT=
+export DIRENV_LOG_FORMAT=
