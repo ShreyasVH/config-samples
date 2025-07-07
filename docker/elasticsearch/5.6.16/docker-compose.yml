@@ -10,4 +10,4 @@ services:
       - 41505:41505
       - 41605:41605
     volumes:
-      - ./elasticsearch.yml:/usr/share/elasticsearch/elasticsearch.yml
+      - ./elasticsearch.yml:/usr/share/elasticsearch/config/elasticsearch.yml
