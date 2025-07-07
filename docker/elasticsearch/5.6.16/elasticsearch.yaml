@@ -1,0 +1,5 @@
+cluster.name: "elasticsearch_5_6_16"
+http.port: 41505
+transport.tcp.port: 41605
+network.host: 0.0.0.0
+bootstrap.system_call_filter: false
