@@ -2,7 +2,6 @@ version: '3.8'
 services:
   mssql-2022:
     image: mcr.microsoft.com/mssql/server:2022-latest
-    restart: always
     container_name: "2022"
     ports:
       - 1433:1433
