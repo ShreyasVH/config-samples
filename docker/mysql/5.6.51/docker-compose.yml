@@ -9,6 +9,7 @@ services:
       MYSQL_ROOT_PASSWORD: password
       MYSQL_USER: shreyas
       MYSQL_PASSWORD: password
+    command: --max_connections=500
     ports:
       - "1438:3306"
     volumes:
