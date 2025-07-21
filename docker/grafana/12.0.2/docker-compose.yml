@@ -1,0 +1,11 @@
+services:
+  grafana-12.0.2:
+    image: grafana/grafana:12.0.2
+    container_name: "12.0.2"
+    ports:
+      - "1445:3000"
+    volumes:
+      - grafana-storage:/var/lib/grafana
+
+volumes:
+  grafana-storage:
