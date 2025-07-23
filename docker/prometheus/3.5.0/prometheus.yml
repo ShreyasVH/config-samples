@@ -10,3 +10,7 @@ scrape_configs:
     static_configs:
       - targets: ['host.docker.internal:1443']
 
+  - job_name: 'mongodb'
+    static_configs:
+      - targets: ['host.docker.internal:1446']
+
