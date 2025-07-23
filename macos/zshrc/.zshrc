@@ -37,3 +37,4 @@ export PATH="$HOME/programs/direnv:$PATH"
 eval "$(direnv hook zsh)"
 
 export DIRENV_LOG_FORMAT=
+ulimit -n 65536
