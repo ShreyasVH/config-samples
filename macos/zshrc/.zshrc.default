@@ -1,0 +1,8 @@
+export PATH="/Applications/Sublime Text.app/Contents/SharedSupport/bin":$PATH
+export PATH="/Applications/Docker.app/Contents/Resources/bin":$PATH
+export PATH="$HOME/programs/direnv:$PATH"
+
+eval "$(direnv hook zsh)"
+
+export DIRENV_LOG_FORMAT=
+ulimit -n 65536
