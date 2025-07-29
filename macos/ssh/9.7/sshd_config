@@ -1,0 +1,11 @@
+Port 22
+ListenAddress 0.0.0.0
+PermitRootLogin no
+
+AuthorizedKeysFile	.ssh/authorized_keys
+
+PubkeyAuthentication no
+PasswordAuthentication yes
+UsePAM yes
+
+Subsystem	sftp	/Users/shreyas/programs/ssh/9.7/libexec/sftp-server

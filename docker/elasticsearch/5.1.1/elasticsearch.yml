@@ -1,0 +1,6 @@
+cluster.name: elasticsearch_5_1_1
+# path.data: /usr/local/var/elasticsearch_5.1/
+# path.logs: /Users/shreyasvh/Desktop/logs/elasticsearch_5.1/
+network.host: 0.0.0.0
+http.port: 1436
+transport.tcp.port: 1437

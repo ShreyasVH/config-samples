@@ -15,6 +15,8 @@ export PATH="/sbin":$PATH
 export PATH="/bin":$PATH
 export PATH="$HOME/binaries:$PATH"
 export PATH="$HOME/systemBinaries:$PATH"
+export PATH="$HOME/ide/sublime_text:$PATH"
+export PATH="$HOME/programs/direnv:$PATH"
 
 eval "$(direnv hook bash)"
 

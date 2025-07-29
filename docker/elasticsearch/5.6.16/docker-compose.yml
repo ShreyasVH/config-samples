@@ -1,0 +1,13 @@
+version: '3.8'
+services:
+  elasticsearch-5.6.16:
+    image: elasticsearch:5.6.16
+    container_name: "5.6.16"
+    platform: linux/amd64
+    environment:
+      - discovery.type=single-node
+    ports:
+      - 41505:41505
+      - 41605:41605
+    volumes:
+      - ./elasticsearch.yml:/usr/share/elasticsearch/config/elasticsearch.yml

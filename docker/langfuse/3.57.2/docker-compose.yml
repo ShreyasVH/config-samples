@@ -6,7 +6,6 @@
 services:
   langfuse-worker:
     image: langfuse/langfuse-worker:3
-    restart: always
     depends_on: &langfuse-depends-on
       postgres:
         condition: service_healthy
@@ -54,8 +53,8 @@ services:
       LANGFUSE_S3_BATCH_EXPORT_FORCE_PATH_STYLE: ${LANGFUSE_S3_BATCH_EXPORT_FORCE_PATH_STYLE:-true}
       LANGFUSE_INGESTION_QUEUE_DELAY_MS: ${LANGFUSE_INGESTION_QUEUE_DELAY_MS:-}
       LANGFUSE_INGESTION_CLICKHOUSE_WRITE_INTERVAL_MS: ${LANGFUSE_INGESTION_CLICKHOUSE_WRITE_INTERVAL_MS:-}
-      REDIS_HOST: ${REDIS_HOST:-redis}
-      REDIS_PORT: ${REDIS_PORT:-6379}
+      REDIS_HOST: redis
+      REDIS_PORT: 6379
       REDIS_AUTH: ${REDIS_AUTH:-myredissecret} # CHANGEME
       REDIS_TLS_ENABLED: ${REDIS_TLS_ENABLED:-false}
       REDIS_TLS_CA: ${REDIS_TLS_CA:-/certs/ca.crt}
@@ -64,7 +63,6 @@ services:
 
   langfuse-web-3_57_2:
     image: langfuse/langfuse:3.57.2
-    restart: always
     depends_on: *langfuse-depends-on
     ports:
       - 1425:3000
@@ -85,7 +83,6 @@ services:
 
   clickhouse:
     image: clickhouse/clickhouse-server
-    restart: always
     user: "101:101"
     environment:
       CLICKHOUSE_DB: default
@@ -106,7 +103,6 @@ services:
 
   minio:
     image: minio/minio
-    restart: always
     entrypoint: sh
     # create the 'langfuse' bucket before starting the service
     command: -c 'mkdir -p /data/langfuse && minio server --address ":9000" --console-address ":9001" /data'
@@ -127,7 +123,6 @@ services:
 
   redis:
     image: redis:7
-    restart: always
     # CHANGEME: row below to secure redis password
     command: >
       --requirepass ${REDIS_AUTH:-myredissecret}
@@ -140,8 +135,7 @@ services:
       retries: 10
 
   postgres:
-    image: postgres:${POSTGRES_VERSION:-latest}
-    restart: always
+    image: postgres:16
     healthcheck:
       test: ["CMD-SHELL", "pg_isready -U postgres"]
       interval: 3s

@@ -1,0 +1,11 @@
+version: '3.8'
+services:
+  elasticsearch-5.1.1:
+    image: elasticsearch:5.1.1
+    container_name: "5.1.1"
+    platform: linux/amd64
+    ports:
+      - 1436:1436
+      - 1437:1437
+    volumes:
+      - ./elasticsearch.yml:/usr/share/elasticsearch/config/elasticsearch.yml
