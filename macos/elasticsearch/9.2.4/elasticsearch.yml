@@ -1,0 +1,27 @@
+cluster.name: elasticsearch_9_2_4
+
+node.name: node-9_2_4-1
+
+network.host: 0.0.0.0
+
+http.port: 1496
+transport.port: 1497
+
+discovery.seed_hosts: ["0.0.0.0:1497"]
+
+cluster.initial_master_nodes: ["node-9_2_4-1"]
+
+xpack.security.enabled: true
+
+xpack.security.enrollment.enabled: false
+
+xpack.security.http.ssl.enabled: true
+xpack.security.http.ssl.key: server.key
+xpack.security.http.ssl.certificate: server.crt
+xpack.security.http.ssl.certificate_authorities: [ "rootCA.crt" ]
+
+xpack.security.transport.ssl.enabled: true
+xpack.security.transport.ssl.verification_mode: certificate
+xpack.security.transport.ssl.key: server.key
+xpack.security.transport.ssl.certificate: server.crt
+xpack.security.transport.ssl.certificate_authorities: [ "rootCA.crt" ]
