@@ -27,6 +27,8 @@ export PATH="$HOME/programs/direnv:$PATH"
 
 eval "$(direnv hook zsh)"
 
+ulimit -n 65535
+
 
 SUDO_ASKPASS=$HOME/askpass.sh sudo -A timedatectl set-timezone UTC
 
