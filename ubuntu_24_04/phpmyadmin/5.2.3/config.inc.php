@@ -22,139 +22,33 @@ $cfg['blowfish_secret'] = ''; /* YOU MUST FILL IN THIS FOR COOKIE AUTH! */
  */
 $i = 0;
 
-/**
- * First server
- */
-$i++;
-/* Authentication type */
-$cfg['Servers'][$i]['auth_type'] = 'config';
-$cfg['Servers'][$i]['host'] = 'localhost';
-$cfg['Servers'][$i]['port'] = 3311;
-$cfg['Servers'][$i]['verbose']   = '8.0.33';
-$cfg['Servers'][$i]['compress'] = false;
-$cfg['Servers'][$i]['AllowNoPassword'] = false;
-$cfg['Servers'][$i]['extension'] = 'mysqli';
-$cfg['Servers'][$i]['user'] = 'shreyas';
-$cfg['Servers'][$i]['password'] = 'password';
-$cfg['Servers'][$i]['socket'] = '/Users/shreyas/programs/mysql/8.0.33/data/mysql_8_0_33.sock';
+$path = getenv('HOME') . DIRECTORY_SEPARATOR . 'programs' . DIRECTORY_SEPARATOR . 'mysql';
+$files = scandir($path);
 
-$i++;
-$cfg['Servers'][$i]['auth_type'] = 'config';
-$cfg['Servers'][$i]['host'] = 'localhost';
-$cfg['Servers'][$i]['port'] = 3309;
-$cfg['Servers'][$i]['verbose']   = '8.0.19';
-$cfg['Servers'][$i]['compress'] = false;
-$cfg['Servers'][$i]['AllowNoPassword'] = false;
-$cfg['Servers'][$i]['extension'] = 'mysqli';
-$cfg['Servers'][$i]['user'] = 'shreyas';
-$cfg['Servers'][$i]['password'] = 'password';
-$cfg['Servers'][$i]['socket'] = '/Users/shreyasvh/Desktop/sockets/mysqld_8.0.sock';
+$versions = array_filter($files, function ($item) use ($path) {
+    return is_dir($path . DIRECTORY_SEPARATOR . $item) && $item !== '.' && $item !== '..';
+});
 
-$i++;
-$cfg['Servers'][$i]['auth_type'] = 'config';
-$cfg['Servers'][$i]['host'] = 'localhost';
-$cfg['Servers'][$i]['port'] = 41001;
-$cfg['Servers'][$i]['verbose']   = '8.0.34';
-$cfg['Servers'][$i]['compress'] = false;
-$cfg['Servers'][$i]['AllowNoPassword'] = false;
-$cfg['Servers'][$i]['extension'] = 'mysqli';
-$cfg['Servers'][$i]['user'] = 'shreyas';
-$cfg['Servers'][$i]['password'] = 'password';
-$cfg['Servers'][$i]['socket'] = '/Users/shreyas/programs/mysql/8.0.34/data/mysql_8_0_34.sock';
+foreach($versions as $version)
+{
+	$i++;
 
-$i++;
-$cfg['Servers'][$i]['auth_type'] = 'config';
-$cfg['Servers'][$i]['host'] = 'localhost';
-$cfg['Servers'][$i]['port'] = 41003;
-$cfg['Servers'][$i]['verbose']   = '8.1.0';
-$cfg['Servers'][$i]['compress'] = false;
-$cfg['Servers'][$i]['AllowNoPassword'] = false;
-$cfg['Servers'][$i]['extension'] = 'mysqli';
-$cfg['Servers'][$i]['user'] = 'shreyas';
-$cfg['Servers'][$i]['password'] = 'password';
-$cfg['Servers'][$i]['socket'] = '/Users/shreyas/programs/mysql/8.1.0/data/mysql_8_1_0.sock';
+	$command = "grep -E '^ *port=' " . getenv('HOME') . DIRECTORY_SEPARATOR . "programs" . DIRECTORY_SEPARATOR . "mysql" . DIRECTORY_SEPARATOR . $version . DIRECTORY_SEPARATOR . "my.cnf | awk -F= '{print $2}' | tr -d ' '";
+	$port = trim(shell_exec($command));
 
-$i++;
-$cfg['Servers'][$i]['auth_type'] = 'config';
-$cfg['Servers'][$i]['host'] = '192.168.0.178';
-$cfg['Servers'][$i]['port'] = 41001;
-$cfg['Servers'][$i]['verbose']   = 'wsl 8.0.34';
-$cfg['Servers'][$i]['compress'] = false;
-$cfg['Servers'][$i]['AllowNoPassword'] = false;
-$cfg['Servers'][$i]['extension'] = 'mysqli';
-$cfg['Servers'][$i]['user'] = 'shreyas';
-$cfg['Servers'][$i]['password'] = 'password';
-// $cfg['Servers'][$i]['socket'] = '/Users/shreyas/programs/mysql/8.1.0/data/mysql_8_1_0.sock';
+	$cfg['Servers'][$i]['auth_type'] = 'config';
+	$cfg['Servers'][$i]['host'] = '127.0.0.1';
+	$cfg['Servers'][$i]['port'] = $port;
+	$cfg['Servers'][$i]['verbose']   = $version;
+	$cfg['Servers'][$i]['compress'] = false;
+	$cfg['Servers'][$i]['AllowNoPassword'] = false;
+	$cfg['Servers'][$i]['extension'] = 'mysqli';
+	$cfg['Servers'][$i]['user'] = 'shreyas';
+	$cfg['Servers'][$i]['password'] = 'password';
+	// $cfg['Servers'][$i]['socket'] = '/Users/shreyas/programs/mysql/8.0.33/data/mysql_8_0_33.sock';
+}
+// die;
 
-$i++;
-$cfg['Servers'][$i]['auth_type'] = 'config';
-$cfg['Servers'][$i]['host'] = '127.0.0.1';
-$cfg['Servers'][$i]['port'] = 1229;
-$cfg['Servers'][$i]['verbose']   = '8.0.35';
-$cfg['Servers'][$i]['compress'] = false;
-$cfg['Servers'][$i]['AllowNoPassword'] = false;
-$cfg['Servers'][$i]['extension'] = 'mysqli';
-$cfg['Servers'][$i]['user'] = 'shreyas';
-$cfg['Servers'][$i]['password'] = 'password';
-
-$i++;
-$cfg['Servers'][$i]['auth_type'] = 'config';
-$cfg['Servers'][$i]['host'] = 'localhost';
-$cfg['Servers'][$i]['port'] = 1370;
-$cfg['Servers'][$i]['verbose']   = '9.0.1';
-$cfg['Servers'][$i]['compress'] = false;
-$cfg['Servers'][$i]['AllowNoPassword'] = false;
-$cfg['Servers'][$i]['extension'] = 'mysqli';
-$cfg['Servers'][$i]['user'] = 'shreyas';
-$cfg['Servers'][$i]['password'] = 'password';
-$cfg['Servers'][$i]['socket'] = '/Users/shreyas/programs/mysql/9.0.1/data/mysql_9_0_1.sock';
-
-$i++;
-$cfg['Servers'][$i]['auth_type'] = 'config';
-$cfg['Servers'][$i]['host'] = 'localhost';
-$cfg['Servers'][$i]['port'] = 1393;
-$cfg['Servers'][$i]['verbose']   = '9.1.0';
-$cfg['Servers'][$i]['compress'] = false;
-$cfg['Servers'][$i]['AllowNoPassword'] = false;
-$cfg['Servers'][$i]['extension'] = 'mysqli';
-$cfg['Servers'][$i]['user'] = 'shreyas';
-$cfg['Servers'][$i]['password'] = 'password';
-$cfg['Servers'][$i]['socket'] = '/Users/shreyas/programs/mysql/9.1.0/data/mysql_9_1_0.sock';
-
-$i++;
-$cfg['Servers'][$i]['auth_type'] = 'config';
-$cfg['Servers'][$i]['host'] = 'localhost';
-$cfg['Servers'][$i]['port'] = 1422;
-$cfg['Servers'][$i]['verbose']   = '9.0.1';
-$cfg['Servers'][$i]['compress'] = false;
-$cfg['Servers'][$i]['AllowNoPassword'] = false;
-$cfg['Servers'][$i]['extension'] = 'mysqli';
-$cfg['Servers'][$i]['user'] = 'shreyas';
-$cfg['Servers'][$i]['password'] = 'password';
-$cfg['Servers'][$i]['socket'] = '/Users/shreyas/programs/mysql/9.3.0/data/mysql_9_3_0.sock';
-
-$i++;
-$cfg['Servers'][$i]['auth_type'] = 'config';
-$cfg['Servers'][$i]['host'] = 'localhost';
-$cfg['Servers'][$i]['port'] = 1467;
-$cfg['Servers'][$i]['verbose']   = '9.5.0';
-$cfg['Servers'][$i]['compress'] = false;
-$cfg['Servers'][$i]['AllowNoPassword'] = false;
-$cfg['Servers'][$i]['extension'] = 'mysqli';
-$cfg['Servers'][$i]['user'] = 'shreyas';
-$cfg['Servers'][$i]['password'] = 'password';
-$cfg['Servers'][$i]['socket'] = '/Users/shreyas/programs/mysql/9.5.0/data/mysql_9_5_0.sock';
-
-$i++;
-$cfg['Servers'][$i]['auth_type'] = 'config';
-$cfg['Servers'][$i]['host'] = '127.0.0.1';
-$cfg['Servers'][$i]['port'] = 1504;
-$cfg['Servers'][$i]['verbose']   = '9.6.0';
-$cfg['Servers'][$i]['compress'] = false;
-$cfg['Servers'][$i]['AllowNoPassword'] = false;
-$cfg['Servers'][$i]['extension'] = 'mysqli';
-$cfg['Servers'][$i]['user'] = 'shreyas';
-$cfg['Servers'][$i]['password'] = 'password';
 
 /**
  * phpMyAdmin configuration storage settings.
