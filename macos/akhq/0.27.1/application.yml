@@ -1,0 +1,9 @@
+micronaut:
+  server:
+    port: 1561
+
+akhq:
+  connections:
+    4-3-0:
+      properties:
+        bootstrap.servers: "localhost:1559"
