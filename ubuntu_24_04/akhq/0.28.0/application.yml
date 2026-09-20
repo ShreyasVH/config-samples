@@ -1,0 +1,17 @@
+micronaut:
+  server:
+    port: 1619
+
+akhq:
+  connections:
+    4-3-1:
+      properties:
+        bootstrap.servers: "localhost:1589"
+
+    4-3-0:
+      properties:
+        bootstrap.servers: "localhost:1559"
+
+    4-2-1:
+      properties:
+        bootstrap.servers: "localhost:1562"

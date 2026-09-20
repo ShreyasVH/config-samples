@@ -1,4 +1,3 @@
-version: '3.8'
 services:
   mssql-15.0.2000.1574:
     image: mcr.microsoft.com/azure-sql-edge
