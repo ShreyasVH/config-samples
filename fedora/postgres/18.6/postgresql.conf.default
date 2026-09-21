@@ -778,7 +778,7 @@ autovacuum_worker_slots = 16		# autovacuum worker slots to allocate
 
 # - Locale and Formatting -
 
-datestyle = 'iso, mdy'
+datestyle = 'iso, dmy'
 #intervalstyle = 'postgres'
 timezone = UTC
 #timezone_abbreviations = 'Default'	# Select the set of available time zone
@@ -794,11 +794,11 @@ timezone = UTC
 					# encoding
 
 # These settings are initialized by initdb, but they can be changed.
-lc_messages = 'en_US.UTF-8'		# locale for system error message
+lc_messages = 'en_IN.UTF-8'		# locale for system error message
 					# strings
-lc_monetary = 'en_US.UTF-8'		# locale for monetary formatting
-lc_numeric = 'en_US.UTF-8'		# locale for number formatting
-lc_time = 'en_US.UTF-8'			# locale for time formatting
+lc_monetary = 'en_IN.UTF-8'		# locale for monetary formatting
+lc_numeric = 'en_IN.UTF-8'		# locale for number formatting
+lc_time = 'en_IN.UTF-8'			# locale for time formatting
 
 #icu_validation_level = warning		# report ICU locale validation
 					# errors at the given level
