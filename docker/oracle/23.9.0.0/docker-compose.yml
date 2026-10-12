@@ -8,4 +8,4 @@ services:
     environment:
       - ORACLE_PWD=MySecurePass
     volumes:
-      - ${HOME}/dbBackups:/opt/oracle/backup
+      - /data/dbBackups:/opt/oracle/backup
