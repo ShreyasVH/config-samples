@@ -2,7 +2,7 @@ services:
   packages:
     build: ./
     ports:
-      - "1644:8080"
+      - "1643:8080"
     container_name: packages
     volumes:
       - ${HOME}/Downloads/packages:/packages
