@@ -33,3 +33,5 @@ ulimit -n 65535
 SUDO_ASKPASS=$HOME/askpass.sh sudo -A timedatectl set-timezone UTC
 
 export DIRENV_LOG_FORMAT=
+
+export HOST=0.0.0.0
