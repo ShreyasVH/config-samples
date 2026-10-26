@@ -2,7 +2,7 @@ autoload -Uz vcs_info
 precmd() { vcs_info }
 
 setopt PROMPT_SUBST
-PROMPT='%B%F{green}%n:%F{blue}%~${vcs_info_msg_0_}: %F{yellow}$(date "+%Y-%m-%d %H:%M:%S")%f%b $ '
+PROMPT='%B%F{green}%n@macos:%F{blue}%~${vcs_info_msg_0_}: %F{yellow}$(date "+%Y-%m-%d %H:%M:%S")%f%b $ '
 RPROMPT='%(?.%F{green}OK.%F{red}FAIL)%f'
 
 #export PATH="/Applications/Sublime Text.app/Contents/SharedSupport/bin:$PATH"
