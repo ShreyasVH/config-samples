@@ -1,0 +1,30 @@
+
+storage: /storage
+
+max_body_size: 100mb
+
+listen: 0.0.0.0:4873
+
+auth:
+  htpasswd:
+    file: /config/htpasswd
+    max_users: 100
+
+uplinks: {}
+
+packages:
+  '@*/*':
+    access: $all
+    publish: $authenticated
+
+  '**':
+    access: $all
+    publish: $authenticated
+
+web:
+  enable: true
+
+log:
+  type: stdout
+  format: pretty
+  level: http
