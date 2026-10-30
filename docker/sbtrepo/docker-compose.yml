@@ -1,0 +1,8 @@
+services:
+  sbtrepo:
+    build: ./
+    ports:
+      - "1646:8080"
+    container_name: sbtrepo
+    volumes:
+      - ${HOME}/Downloads/sbt-packages/https/repo1.maven.org:/packages
