@@ -1,0 +1,8 @@
+services:
+  mavenrepo:
+    build: ./
+    ports:
+      - "1645:8080"
+    container_name: mavenrepo
+    volumes:
+      - ${HOME}/Downloads/maven-packages:/packages

@@ -8,4 +8,4 @@ services:
       - ACCEPT_EULA=Y
       - SA_PASSWORD=P@ssword
     volumes:
-      - ${HOME}/dbBackups:/home/mssql/dbBackups
+      - /data/dbBackups:/home/mssql/dbBackups

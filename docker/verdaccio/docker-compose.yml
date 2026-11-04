@@ -1,0 +1,9 @@
+services:
+  verdaccio:
+    build: ./
+    ports:
+      - "1644:4873"
+    container_name: verdaccio
+    volumes:
+      - ${HOME}/Downloads/npm-packages:/storage
+      - ./config.yaml:/config/config.yaml
