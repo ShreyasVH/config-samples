@@ -7,7 +7,7 @@ network.host: 0.0.0.0
 http.port: 1636
 transport.port: 1637
 
-cluster.initial_master_nodes: ["node-9_5_3-1"]
+discovery.type: single-node
 
 xpack.security.enabled: true
 
