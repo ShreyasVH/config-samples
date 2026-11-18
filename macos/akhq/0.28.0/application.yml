@@ -4,6 +4,10 @@ micronaut:
 
 akhq:
   connections:
+    4-4-0:
+      properties:
+        bootstrap.servers: "localhost:1650"
+
     4-3-1:
       properties:
         bootstrap.servers: "localhost:1589"
